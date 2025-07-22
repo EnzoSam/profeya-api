@@ -1,0 +1,43 @@
+{
+  "name": "prana-erp",
+  "version": "1.0.0",
+  "description": "ERP modular con Node.js, TypeScript, Inversify, Express, DDD, arquitectura hexagonal y CQRS.",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node --env-file=.env.production dist/index.js",
+    "start:dev": "node --env-file=.env.development dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only -r tsconfig-paths/register src/index.ts",
+    "build": "tsc"
+  },
+  "keywords": [
+    "erp",
+    "node",
+    "typescript",
+    "ddd",
+    "hexagonal",
+    "cqrs",
+    "inversify",
+    "express"
+  ],
+  "author": "Taquion IT",
+  "license": "MIT",
+  "dependencies": {
+    "@types/jsonwebtoken": "^9.0.10",
+    "express": "^5.1.0",
+    "inversify": "^7.5.4",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3",
+    "prisma": "^6.11.1",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.25",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.0.10",
+    "@types/uuid": "^10.0.0",
+    "ts-node-dev": "^2.0.0",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3"
+  }
+}
